@@ -1,0 +1,187 @@
+body {	/*the outer layer of the site and global style attributes*/
+	font-family: "Open Sans", "Helvetica Neue", Josefin Slab, Helvetica, sans-serif;
+	margin: 0px;
+	/*background: #FFB873;*/
+	height: 100%;
+	width: 100%;
+}
+
+#bodyContainer {
+	position: static;
+	height: 100%;
+	width: 100%;
+	overflow: visible;
+}
+
+#firstPageEverything {
+	position: absolute;
+	height: calc(100% - 20px);
+	width: calc(100% - 20px);
+	padding: 5px;
+	margin: 5px;
+
+	font-weight: bold;
+	font-size: 20px;
+	z-index: 1;
+}
+
+#img1 {
+	position: fixed;
+	top: -10px;
+	left: -10px;
+	height: calc(100% + 20px);
+	width: calc(100% + 20px);
+	z-index: -1;
+	overflow: hidden;
+}
+
+.msgLeft {
+	display: none;
+}
+
+.redimg {
+	position: absolute;
+	overflow: hidden;
+	height: calc(50% - 25px);
+	width: calc(100% - 60px);
+	z-index: 0;
+	opacity: 0.6;
+	border-radius: 20px;
+	left: 30px;
+}
+
+.greenimg {
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	height: 100%; /*How do I maintain aspect ratio?*/
+	width: 100%;
+	z-index: 0;
+	opacity: .4;
+	border-radius: 20px;
+	left: 0px;
+	top: 0px;
+}
+
+#img2 {
+	top: calc(0% + 30px);
+}
+
+#img3 {
+	top: calc(50% + 10px);
+}
+
+#title {
+	font-size: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #FF7F00; /*Orange*/
+	width: 100%;
+	height: 15%;
+	border-radius: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	opacity: .8;
+}
+
+#content {
+	font-size: 25px;
+	width: calc(100% - 20px);
+	height: calc(85% - 20px);
+	margin: 5px;
+	padding: 5px;
+}
+
+.contentHalf {
+	position: absolute;
+	/*background-color: #38DF64;*/
+	width: calc(50% - 70px);
+	height: calc(80% - 70px);
+	padding: 25px;
+	border-radius: 20px;
+}
+
+#contentLeft {
+	background-color: none;
+	opacity: 1;
+}
+
+#contentRight {
+	left: 50%;
+	/*opacity: .8;*/
+}
+
+.redtext {
+	/*color: #04819E;*/
+	/*font-size: 30px;*/
+	/*font-weight: bold;*/
+	text-shadow: 2px 2px #04819E; /*Blue*/
+	z-index: 99;
+	font-style: italic;
+	color: green;
+}
+
+.contentRightChunk {
+	opacity: 1;
+	/*background-color: #FF1E00;*/
+	height: calc(50% - 20px);
+	width: calc(100% - 30px);
+	margin: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 20px;
+	padding: 10px;
+	z-index: 5;
+
+}
+
+.button {
+	position: absolute;
+	background-color: #04819E;
+	display: inline-block;
+	float: left;
+	top: 70%;
+	height: 28px;
+	width: 80px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	font-size: 18px;
+	vertical-align: middle;
+	text-align: center;
+	border: solid black;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	cursor: pointer;
+}
+
+#button1 {
+	left: 20%;
+}
+
+#button2 {
+	left: 50%;
+}
+
+#secondPageEverything {
+	position: absolute;
+	top: 100%;
+	height: calc(100% - 20px);
+	width: calc(100% - 20px);
+	padding: 5px;
+	margin: 5px;
+	display: none;
+
+	font-weight: bold;
+	background: #f1d1a2;
+	z-index: 2;
+	font-size: 50px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+
+	/*How to make a bouncy arrow*/
+	/*-webkit-animation: bounce 2s infinite*/
