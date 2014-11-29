@@ -9,12 +9,25 @@
 </head>
 <body>
 	<div id = "bodyContainer">
+		<div id="hacktypeOverlay">
+			<iframe id="myFrame" src="http://hackertyper.com"></iframe>
+			<div id="progressBar">
+				<div id="progressBarGreen">
+					
+				</div>
+			</div>
+			<div class="hackButtonBox" id="checkBox">
+				<img class="checkX" id="myCheck" src="assets/img/greencheck.png" alt="lol it no work?">		
+			</div>
+			<div class="hackButtonBox" id="xBox">
+				<img class="checkX" id="myX" src="assets/img/myX.png" alt="lol it no work?">
+			</div>
+		</div>
 		<div id="firstPageEverything">
 			<img id="img1" src="assets/img/orangebg.jpg" alt="lol it no work?">
 			<div id="title">
 				Psychology Exam
 			</div>
-			<!-- <iframe src="http://hackertyper.com"></iframe> -->
 			<div id="content">
 				<div class="contentHalf" id="contentLeft">
 					<img class="greenimg" src="assets/img/greenimg.jpg" alt="lol it no work?">
@@ -52,8 +65,14 @@
 				<div class="contentHalf" id="contentRight">
 					<div class="contentRightChunk" id="ContentRightUp" >
 						<img class="redimg" id="img2" src="assets/img/redimg.jpg" alt="lol it no work?">
-						<div class="redtext">
-							Your truthfulness rating: 100%
+						<div id="truthfulness" class="redtext">
+							Please do not click the following button.
+						</div>
+						<div id="terminalBox" class="button">
+							Open terminal
+							<div id="hacktype">
+								<img class="backimg" id = "hacktypeImg" src="assets/img/hacktype.png" alt=":)">
+							</div>
 						</div>
 					</div>
 					<div class="contentRightChunk" id="ContentRightDown" >
@@ -76,11 +95,13 @@
 			</div>
 		</div>
 		<div id="secondPageEverything">
+			<div id="score">
+				Score: 0
+			</div>
 			<div id="secondPageText" class="text">
 				Find the red dot.
 			</div>
 			<div id="redDot">
-				
 			</div>
 		</div>
 	</div> 

@@ -121,14 +121,11 @@ body {	/*the outer layer of the site and global style attributes*/
 }
 
 .redtext {
-	/*color: #04819E;*/
-	/*font-size: 30px;*/
-	/*font-weight: bold;*/
-	/*text-shadow: 2px 2px #04819E;*/
 	z-index: 99;
-	/*color: white;*/
 	position: absolute;
+	/*left: calc(50% - 50px);*/
 }
+
 
 .contentRightChunk {
 	opacity: 1;
@@ -159,10 +156,105 @@ body {	/*the outer layer of the site and global style attributes*/
 	vertical-align: middle;
 	text-align: center;
 	border: solid black;
+/*	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+*/	cursor: pointer;
+
+}
+
+#terminalBox {
+	position: absolute;
+	width: 160px;
+	height: 20px;
+	/*height: 80px;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto;*/
+	left: calc(50% - 100px);
+	top: calc(50% - 100px);
+	/*background-color: black;*/
+}
+
+#hacktype {
+	position: absolute;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	overflow: hidden;
+	top: -12px;
+	left: -15px;
+	/*border: solid 2px;*/
+	width: 168px;
+	height: 24px;
+}
+
+#hacktypeImg {
+	position: absolute;
+	overflow: hidden;
+	opacity: 0;
+	left: -1px;
+	top: -1px;
+}
+
+#hacktypeOverlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	z-index: 99;
+	display: none;
+}
+
+#myFrame {
+	height: 80%;
+	width: 100%;
+	position: absolute;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
-	cursor: pointer;
+}
+
+.hackButtonBox {
+	height: 15%;
+	width: 20%;
+	position: absolute;
+	top: 82.5%;
+	left: 80%;
+	overflow: hidden;
+}
+
+#xBox {
+	left: 90%;
+}
+
+.checkX {
+	height: 100%;
+	opacity: .5;
+}
+
+.checkX:hover {
+	-webkit-transition: opacity 0.3s ease;
+	opacity: 1;	
+}
+
+#hacktypeImg:hover {
+	-webkit-transition: opacity 0.0s ease;
+	opacity: 1;
+}
+
+#progressBar {
+	position: absolute;
+	width: 60%;
+	height: 15%;
+	top: 82.5%;
+	left: 10%;
+	background-color: red;
+}
+
+#progressBarGreen {
+	width: 20%;
+	height: 100%;
+	background-color: green;
 }
 
 #button1 {
@@ -190,6 +282,13 @@ body {	/*the outer layer of the site and global style attributes*/
 	border-radius: 20px;
 }
 
+#secondPageText {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+
 #redDot {
 	width: 15px;
 	height: 15px;
@@ -201,12 +300,49 @@ body {	/*the outer layer of the site and global style attributes*/
 	left: 0px;
 	top: 0px;
 	border: solid 2px;
+	left: 50%;
+	top: 25%;
 }
 
 .text {
 	position: relative;
 	top: 50%;
 	opacity: .5;
+}
+
+.button:hover {
+	-webkit-transition: background-color 0.3s ease;
+	background-color: #20B152;
+}
+
+#score {
+	position: absolute;
+	padding: 10px;
+}
+
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.shake:hover,
+.shake:focus {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+.shake {
+	display:inline-block
 }
 
 
