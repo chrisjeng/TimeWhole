@@ -1,7 +1,6 @@
 body {	/*the outer layer of the site and global style attributes*/
 	font-family: "Open Sans", "Helvetica Neue", Josefin Slab, Helvetica, sans-serif;
 	margin: 0px;
-	/*background: #FFB873;*/
 	height: 100%;
 	width: 100%;
 }
@@ -103,7 +102,6 @@ body {	/*the outer layer of the site and global style attributes*/
 
 .contentHalf {
 	position: absolute;
-	/*background-color: #38DF64;*/
 	width: calc(50% - 70px);
 	height: calc(80% - 70px);
 	padding: 25px;
@@ -117,19 +115,16 @@ body {	/*the outer layer of the site and global style attributes*/
 
 #contentRight {
 	left: 50%;
-	/*opacity: .8;*/
 }
 
 .redtext {
 	z-index: 99;
 	position: absolute;
-	/*left: calc(50% - 50px);*/
 }
 
 
 .contentRightChunk {
 	opacity: 1;
-	/*background-color: #FF1E00;*/
 	height: calc(50% - 20px);
 	width: calc(100% - 30px);
 	margin: 5px;
@@ -138,7 +133,10 @@ body {	/*the outer layer of the site and global style attributes*/
 	border-radius: 20px;
 	padding: 10px;
 	z-index: 5;
+}
 
+.label {
+	cursor: pointer;
 }
 
 .button {
@@ -156,10 +154,10 @@ body {	/*the outer layer of the site and global style attributes*/
 	vertical-align: middle;
 	text-align: center;
 	border: solid black;
-/*	-moz-user-select: none;
+	-moz-user-select: none;
 	-khtml-user-select: none;
 	-webkit-user-select: none;
-*/	cursor: pointer;
+	cursor: pointer;
 
 }
 
@@ -167,12 +165,8 @@ body {	/*the outer layer of the site and global style attributes*/
 	position: absolute;
 	width: 160px;
 	height: 20px;
-	/*height: 80px;*/
-	/*margin-left: auto;*/
-	/*margin-right: auto;*/
 	left: calc(50% - 100px);
 	top: calc(50% - 100px);
-	/*background-color: black;*/
 }
 
 #hacktype {
@@ -234,11 +228,15 @@ body {	/*the outer layer of the site and global style attributes*/
 
 .checkX:hover {
 	-webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-khtml-transition: opacity 0.3s ease;
 	opacity: 1;	
 }
 
 #hacktypeImg:hover {
 	-webkit-transition: opacity 0.0s ease;
+	-moz-transition: opacity 0.0s ease;
+	-khtml-transition: opacity 0.0s ease;
 	opacity: 1;
 }
 
@@ -312,12 +310,18 @@ body {	/*the outer layer of the site and global style attributes*/
 
 .button:hover {
 	-webkit-transition: background-color 0.3s ease;
+	-moz-transition: background-color 0.3s ease;
+	-khtml-transition: background-color 0.3s ease;
 	background-color: #20B152;
 }
 
 #score {
 	position: absolute;
 	padding: 10px;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
 }
 
 @-webkit-keyframes spaceboots {

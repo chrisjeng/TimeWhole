@@ -101,6 +101,8 @@ $(document).ready(function(){
 
 	var currMsg = 1;
 	function cycleMsg () {
+		if (currMsg >= 10)
+			return false;
 		$("#msg" + currMsg).fadeTo(400, 1, doNothing());
 		currMsg++;
 		var rnd = Math.random();
