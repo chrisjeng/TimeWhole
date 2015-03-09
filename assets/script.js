@@ -54,25 +54,25 @@ $(document).ready(function(){
 				pingMessage("Please... stop.... it hurts...");
 				break;
 			case 25:
-				pingMessage("hi");
+				pingMessage("Dude you must have no life");
 				break;
 			case 29:
-				pingMessage("hi");
+				pingMessage("LOL go do your homework.... and leave me alone QQ");
 				break;
 			case 34:
-				pingMessage("hi");
+				pingMessage("Bruh! Pls! -Anusha");
 				break;
 			case 40:
-				pingMessage("hi");
+				pingMessage("Jerry Cheng would not be proud. Nor would Josh Hug.");
 				break;
 			case 50:
-				pingMessage("hi");
+				pingMessage("Aren't you so amazing?? You made it to half-friggin-100");
 				break;
-			case 60:
-				pingMessage("hi");
+			case 69:
+				pingMessage("Tickle someone else's balls ._.");
 				break;
 			case 100:
-				pingMessage("hi");
+				pingMessage("Wanna hear a joke? There's more content later on.");
 				break;
 			default:
 		}
